@@ -11,49 +11,96 @@
 </head>
 <body>
     <header>
+        <section>
         <nav>
             <ul>
                 <li><a href="#">opprett en konto</a></li>
                 <li><a href="#">min side</a></li>
+                <li>
+                    <form>
+                    <input type="search">
+                    <input type="submit" value="Søk">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </li>
+            </ul>
+               
+        </nav>
+        </section>
+
+        <section>
+        <nav>
+            <ul>
                 <li><a href="index.html"><img src="img/fav.png" alt="logo"></a></li>
                 <li><a href="#bottom"> tips og inspirasjon</a></li>
                 <li><a href="hotell.html">Hotell</a></li>
                 <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
                 <li><a href="#">Kontakt</a></li>
-
-            </ul>   
-
-                <form>
-                    <input type="search">
-                    <input type="submit" value="Søk">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
+            </ul>
         </nav>
+        </section>
     </header>
 
     <main>
-        <form>
-            <input type="text" placeholder="oslo lufthavn">
-            <input type="text" placeholder="stockholm">
-            <select name="reiselengde">
-                <option>mindre en 1 uke</option>
-                <option>2-4 uker</option>
-                <option>1 månder</option>
-                <option>2-6 månder</option>
-                <option>7-12 månder</option>
-            </select>
-            <input type="date" placeholder="mm/dd/yyyy">
-            <input type="number" placeholder="2">
-            <input type="submit" name="Søk">
-        </form>
-
+        <header>
+            <p style="background-image: url(img/sea-4768869_1920.jpg);"></p>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                    <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                    <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonering</a></li>
+                </ul>
+            </nav>
+            <form>
+                <select name="Fra" required>
+                    <option value="">oslo lufthavn</option>
+                    <option value="Torp lufthavn">Torp lufthavn</option>
+                    <option value="bergen lufthavn">Bergen lufthavn</option>
+                    <option value="alta lufthavn">alta lufthavn</option>
+                </select>
+                <select name="Til" required>
+                    <option value="">Albania</option>
+                    <option value="Danmark">Danmark</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Hellas">Hellas</option>
+                </select>
+                <select name="reiselengde" required>
+                        <option value="">mindre en 1 uke</option>
+                        <option value="2-4 uker">2-4 uker</option>
+                        <option value="1 månder">1 månder</option>
+                        <option value="2-6 månder">2-6 månder</option>
+                        <option value="7-12 månder">7-12 månder</option>
+                </select>
+                <input type="date" required>
+                <input type="number" placeholder="2" required>
+                <input type="submit" name="Søk">
+            </form>
+        </header>
     </main>
 
     <section>
+        <p style="background-image: url(img/holiday-2733322_1280.jpg);"></p>
         <h2>bestill sommer tur</h2>
         <p>fly + hotell</p>
-        <p>5000kr</p>
+        <p>Fra 5000kr</p>
         <a href="#">bestill i dag</a>
+    </section>
+
+    <section>
+        <h4>Få ekslusive tilbud</h4>
+        <a href="#">Logg inn/opprett konto<i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section>
+        <h4>Billige resteplasser</h4>
+        <a href="#">opptil 50% rabatt<i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section>
+        <h4>Mars - spar opptil 5000,-</h4>
+        <a href="#">sikre deg et ferie kupp<i class="fa-solid fa-arrow-right"></i></a>
     </section>
 
     <section>
