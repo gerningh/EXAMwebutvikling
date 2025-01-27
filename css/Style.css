@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.sea {
+    background-image:url(img/sea-4768869_1920.jpg);
+    height: 100%;
+   
+    
+}
+
+.checked {
+    color: orange;
+}
+
+footer {
+    display: grid;
+    background-color: #252525;
+    color: white;
+}

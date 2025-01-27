@@ -41,7 +41,7 @@
         </section>
     </header>
 
-    <aside>
+    <section>
         <nav>
             <ul>
                 <li><a href="#">Søk</a></li>
@@ -53,20 +53,47 @@
                 <li><a href="#">Bestill</a></li>
             </ul>
         </nav>
-    </aside>
+    </section>
+
+    <details>
+        <summary>dine valg</summary>
+        <section>
+            <img src="img/beach-666122_640.jpg" alt="beach">
+            <h3>Parga Beach</h3>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+            <ul>
+                <li><i class="fa-solid fa-map-location-dot"></i>Hellas, Parga</li>
+                <li><i class="fa-regular fa-calendar-days"></i> man 14th august - man 21th august 2025</li>
+                <li><i class="fa-solid fa-person"></i> 2 Voksene</li>
+                <li><i class="fa-solid fa-bed"></i></i> Coupels Rom utsikt mot havet</li>
+                <li><i class="fa-solid fa-utensils"></i> Frokost</li>
+                <li><i class="fa-solid fa-plane"></i> Oslo lufthavn-Hellas</li>
+            </ul>
+
+            <p>16 000</p>
+            <p>14 000</p>
+        </section>
+    </details>
 
     <section>
-        <h1>BETALINGMETODER</h1>
-        <h3>Voksen 18+ hovedbestiller</h3>
+        <h1>BETALINGSOPPLYSNINGER</h1>
+        <fieldset>
+
+        <legend><h3>Voksen 18+ hovedbestiller</h3></legend>
         <form>
             <h5>Fornavn</h5>
             <input type="text" placeholder="Fornavn">
             <h5>Etternavn</h5>
             <input type="text" placeholder="Etternavn">
             <h5>Fødseldato</h5>
-            <input type="number" placeholder="DD">
-            <input type="number" placeholder="MM">
-            <input type="number" placeholder="ÅÅÅÅ">
+            <input type="number" min="1" max="31" placeholder="DD">
+            <input type="number" min="1" max="12" placeholder="MM">
+            <input type="number" min="1900" max="2025" placeholder="ÅÅÅÅ">
             <h5>Kjønn</h5>
             <label>
                 <input type="radio">
@@ -95,10 +122,14 @@
                 </select>
             </label>
         </form>
+    </fieldset>
     </section>
 
+
     <section>
-        <h2>Voksen 18+</h2>
+        
+        <fieldset>
+        <legend><h2>Voksen 18+</h2></legend>
         <form>
             <h5>Fornavn</h5>
             <input type="text" placeholder="Fornavn">
@@ -116,6 +147,7 @@
                 Mann
             </label>
         </form>
+    </fieldset>
     </section>
 
     <section>
