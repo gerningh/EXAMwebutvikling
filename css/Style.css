@@ -11,19 +11,28 @@ header {
     padding: 10px 20px;
 }
 
+.global-header{
+
+
+}
+
 a{
     text-decoration: none;
     color: inherit;
 }
 
 .logo {
-    height: 40px;
+    width: 50%;
+    height: 50%;
+}
+
+img{
+    width: 100%;
 }
 
 .sea {
     background-image:url(img/sea-4768869_1920.jpg);
     height: 100%;
-   
     
 }
 
@@ -31,11 +40,36 @@ a{
     color: orange;
 }
 
-.flags {
-    
+.flags{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flags img{ 
+    width: 30px;    
+}
+
+.pay{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 footer {
     background-color: #252525;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .hidedesktop{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hidedesktop{
+        display: none;
+    }
 }
