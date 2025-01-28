@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Montserrat;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo {
@@ -24,8 +31,11 @@ header {
     color: orange;
 }
 
+.flags {
+    
+}
+
 footer {
-    display: grid;
     background-color: #252525;
     color: white;
 }

@@ -12,20 +12,23 @@
 <body>
     <header>
         <section>
-        <nav>
-            <ul>
-                <li><a href="#">opprett en konto</a></li>
-                <li><a href="#">min side</a></li>
-                <li>
-                    <form>
-                    <input type="search">
-                    <input type="submit" value="Søk">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </form>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">opprett en konto</a></li>
+                    <li><a href="#">min side</a></li>
+                    <details>
+                        <summary><i class="fa-solid fa-magnifying-glass"></i></summary>
+                    <li>
+                        <form>
+                        <input type="search">
+                        <input type="submit" value="Søk">
+                        </form>
+                    </li>
+                    </details>
+                </ul>
                
-        </nav>
+            </nav>
+            </details>
         </section>
 
         <section>
@@ -60,19 +63,19 @@
         <section>
             <img src="img/beach-666122_640.jpg" alt="beach">
             <h3>Parga Beach</h3>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+            <span class="fa-regular fa-sun checked"></span>
+            <span class="fa-regular fa-sun checked"></span>
+            <span class="fa-regular fa-sun  checked"></span>
+            <span class="fa-regular fa-sun checked"></span>
+            <span class="fa-regular fa-sun"></span>
 
             <ul>
                 <li><i class="fa-solid fa-map-location-dot"></i>Hellas, Parga</li>
                 <li><i class="fa-regular fa-calendar-days"></i> man 14th august - man 21th august 2025</li>
                 <li><i class="fa-solid fa-person"></i> 2 Voksene</li>
-                <li><i class="fa-solid fa-bed"></i></i> Coupels Rom utsikt mot havet</li>
+                <li><i class="fa-solid fa-bed"></i> Coupels Rom utsikt mot havet</li>
                 <li><i class="fa-solid fa-utensils"></i> Frokost</li>
-                <li><i class="fa-solid fa-plane"></i> Oslo lufthavn-Hellas</li>
+                <li><i class="fa-solid fa-plane-departure"></i> Oslo lufthavn-Hellas</li>
             </ul>
 
             <p>16 000</p>
@@ -87,9 +90,9 @@
         <legend><h3>Voksen 18+ hovedbestiller</h3></legend>
         <form>
             <h5>Fornavn</h5>
-            <input type="text" placeholder="Fornavn">
+            <input type="text" pattern="A-Z a-z" placeholder="Fornavn">
             <h5>Etternavn</h5>
-            <input type="text" placeholder="Etternavn">
+            <input type="text" pattern="A-Z a-z" placeholder="Etternavn">
             <h5>Fødseldato</h5>
             <input type="number" min="1" max="31" placeholder="DD">
             <input type="number" min="1" max="12" placeholder="MM">
@@ -104,7 +107,7 @@
                 Mann
             </label>
             <h5>E-postadresse</h5>
-            <input type="email">
+            <input type="email" pattern="a-z.@">
             <h5>Telefonnummer</h5>
             <input type="number">
             <h5>gateadresse</h5>
@@ -155,19 +158,20 @@
     </section>
 
     <footer id="bottom">
+        <nav class="countries">
+            <a href="#"><img src="flags/sweden.png" alt="Sverige flag">Sverige</a>
+            <a href="#"><img src="flags/denmark.png" alt="Danmark flag">Danmark</a>
+            <a href="#"><img src="flags/norway.png" alt="Norge flag">Norge</a>
+            <a href="#"><img src="flags/material.png" alt="Finland flag">Finland</a>
+            <a href="#"><img src="flags/netherlands.png" alt="Nederland flag">Nederland</a>
+        </nav>
 
-        <img src="flags/sweden.png" alt="Sverige flag"><p>Sverige</p>
-        <img src="flags/denmark.png" alt="Danmark flag"><p>Danmark</p>
-        <img src="flags/norway.png" alt="Norge flag"><p>Norge</p>
-        <img src="flags/material.png" alt="Finland flag"><p>Finland</p>
-        <img src="flags/netherlands.png" alt="Nederland flag"><p>Nederland</p>
-        
         <h4>BETALINGMETODER</h4>
-        <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-        <a href="#"><i class="fa-brands fa-apple-pay"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-apple-pay"></i>
+        <i class="fa-brands fa-cc-amazon-pay"></i>
 
         <h4>NYHETER & TILBUD</h4>
         <p>Meld deg på nyhetsbrev her</p>

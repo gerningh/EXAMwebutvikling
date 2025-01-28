@@ -12,20 +12,23 @@
 <body>
     <header>
         <section>
-        <nav>
-            <ul>
-                <li><a href="#">opprett en konto</a></li>
-                <li><a href="#">min side</a></li>
-                <li>
-                    <form>
-                    <input type="search">
-                    <input type="submit" value="Søk">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </form>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">opprett en konto</a></li>
+                    <li><a href="#">min side</a></li>
+                    <details>
+                        <summary><i class="fa-solid fa-magnifying-glass"></i></summary>
+                    <li>
+                        <form>
+                        <input type="search">
+                        <input type="submit" value="Søk">
+                        </form>
+                    </li>
+                    </details>
+                </ul>
                
-        </nav>
+            </nav>
+            </details>
         </section>
 
         <section>
@@ -62,11 +65,11 @@
 
     <section>
         <h3>Parga Beach</h3>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
+        <span class="fa-regular fa-sun checked"></span>
+        <span class="fa-regular fa-sun checked"></span>
+        <span class="fa-regular fa-sun  checked"></span>
+        <span class="fa-regular fa-sun checked"></span>
+        <span class="fa-regular fa-sun"></span>
 
         <a href="#">Se alle anmedelsene<i class="fa-solid fa-arrow-right"></i></a>
     </section>
@@ -125,19 +128,20 @@
     </section>
     
     <footer id="bottom">
+        <nav class="countries">
+            <a href="#"><img src="flags/sweden.png" alt="Sverige flag">Sverige</a>
+            <a href="#"><img src="flags/denmark.png" alt="Danmark flag">Danmark</a>
+            <a href="#"><img src="flags/norway.png" alt="Norge flag">Norge</a>
+            <a href="#"><img src="flags/material.png" alt="Finland flag">Finland</a>
+            <a href="#"><img src="flags/netherlands.png" alt="Nederland flag">Nederland</a>
+        </nav>
 
-        <img src="flags/sweden.png" alt="Sverige flag"><p>Sverige</p>
-        <img src="flags/denmark.png" alt="Danmark flag"><p>Danmark</p>
-        <img src="flags/norway.png" alt="Norge flag"><p>Norge</p>
-        <img src="flags/material.png" alt="Finland flag"><p>Finland</p>
-        <img src="flags/netherlands.png" alt="Nederland flag"><p>Nederland</p>
-        
         <h4>BETALINGMETODER</h4>
-        <a href="#"><i class="fa-brands fa-cc-visa"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-mastercard"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-paypal"></i></a>
-        <a href="#"><i class="fa-brands fa-apple-pay"></i></a>
-        <a href="#"><i class="fa-brands fa-cc-amazon-pay"></i></a>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-apple-pay"></i>
+        <i class="fa-brands fa-cc-amazon-pay"></i>
 
         <h4>NYHETER & TILBUD</h4>
         <p>Meld deg på nyhetsbrev her</p>
