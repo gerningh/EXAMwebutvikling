@@ -16,6 +16,25 @@ header .global-header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+a{
+    color: #252525;
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    list-style: none;
+}
+
 header .global-header nav{
     display: flex;
     justify-content: space-between;
@@ -79,7 +98,7 @@ img{
 }
 
 .logo{
-    width: 5%;
+    width: 50%;
     height: auto;
 }
 
@@ -462,5 +481,5 @@ footer .social-icons a:hover{
 }
 
 @media only screen and (min-width: 768px) {
-
+    
 }

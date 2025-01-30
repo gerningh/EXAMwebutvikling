@@ -10,38 +10,31 @@
     <title>Hotell</title>
 </head>
 <body>
-    <header>
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#">opprett en konto</a></li>
-                    <li><a href="#">min side</a></li>
+    <header class="global-header">
+        <nav>
+            <ul class="left">
+                <li><a href="index.html"><img src="img/fav.png" alt="logo" class="logo"></a></li>
+            </ul>
+            <ul class="right">
+                <li class="top-links">
                     <details>
                         <summary><i class="fa-solid fa-magnifying-glass"></i></summary>
-                    <li>
                         <form>
-                        <input type="search">
-                        <input type="submit" value="Søk">
+                            <input type="search">
+                            <input type="submit" value="Søk">
                         </form>
-                    </li>
                     </details>
-                </ul>
-               
-            </nav>
-            </details>
-        </section>
-
-        <section>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="img/fav.png" alt="logo"></a></li>
-                <li><a href="#bottom"> tips og inspirasjon</a></li>
-                <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                <li><a href="#">Kontakt</a></li>
+                    <a href="order.html" class="account-link"><i class="fa-regular fa-circle-user"></i> Min side</a>
+                    <a href="#bottom" class="account-link">Opprett en konto</a>
+                </li>
+                <li class="bottom-links">
+                    <a href="#bottom">Tips og inspirasjon</a>
+                    <a href="hotell.html">Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+                    <a href="#">Kontakt</a>
+                </li>
             </ul>
         </nav>
-        </section>
     </header>
 
     <main>
@@ -96,8 +89,9 @@
     </section>
 
     </main>
-    <section>
+    <section class="grid-container">
         <article>
+            <img src="img/landscape-2016308_640.jpg" alt="landscape">
             <h4>Junior suite</h4>
             <p>plass til 2 - Queen size-seng</p>
 
@@ -105,6 +99,7 @@
             <p>for 3 netter, 1 rom 2 263kr per natt lnk moms og avgifter</p>
         </article>
         <article>
+            <img src="img/landscape-2016308_640.jpg" alt="landscape">
             <h4>Junior suite</h4>
             <p>plass til 2 - Queen size-seng</p>
 
@@ -112,6 +107,7 @@
             <p>for 3 netter, 1 rom 2 263kr per natt lnk moms og avgifter</p>
         </article>
         <article>
+            <img src="img/landscape-2016308_640.jpg" alt="landscape">
             <h4>Junior suite</h4>
             <p>plass til 2 - Queen size-seng</p>
 
@@ -119,6 +115,7 @@
             <p>for 3 netter, 1 rom 2 263kr per natt lnk moms og avgifter</p>
         </article>
         <article>
+            <img src="img/landscape-2016308_640.jpg" alt="landscape">
             <h4>Junior suite</h4>
             <p>plass til 2 - Queen size-seng</p>
 
@@ -128,41 +125,60 @@
     </section>
     
     <footer id="bottom">
-        <nav class="countries">
-            <a href="#"><img src="flags/sweden.png" alt="Sverige flag">Sverige</a>
-            <a href="#"><img src="flags/denmark.png" alt="Danmark flag">Danmark</a>
-            <a href="#"><img src="flags/norway.png" alt="Norge flag">Norge</a>
-            <a href="#"><img src="flags/material.png" alt="Finland flag">Finland</a>
-            <a href="#"><img src="flags/netherlands.png" alt="Nederland flag">Nederland</a>
-        </nav>
-
-        <h4>BETALINGMETODER</h4>
-        <i class="fa-brands fa-cc-visa"></i>
-        <i class="fa-brands fa-cc-mastercard"></i>
-        <i class="fa-brands fa-cc-paypal"></i>
-        <i class="fa-brands fa-apple-pay"></i>
-        <i class="fa-brands fa-cc-amazon-pay"></i>
-
-        <h4>NYHETER & TILBUD</h4>
-        <p>Meld deg på nyhetsbrev her</p>
-        <input type="email">
-        <input type="submit" name="send">
-        <p>Kjøp reisegavekort</p>
-        
-        <h4>KUNDESERVICE</h4>
-        <ul>
-            <li><a href="#">Spørsmål og svar</a></li>
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">Tilgjenglighetsærklering</a></li>
-        </ul>
-
-        <h4>SOSIALE MEDIER</h4>
-        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://no.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-    </footer>
+                <section class="footer-flags">
+                    <img src="flags/sweden.png" alt="Sverige">
+                    <span>Sverige</span>
+                    <img src="flags/denmark.png" alt="Danmark">
+                    <span>Danmark</span>
+                    <img src="flags/norway.png" alt="Norge">
+                    <span>Norge</span>
+                    <img src="flags/material.png" alt="Finland">
+                    <span>Finland</span>
+                    <img src="flags/netherlands.png" alt="Netherlands">
+                    <span>Netherlands</span>
+                </section>
+                <section class="footer-content">
+                    <article class="footer-section pay">
+                        <h4>BETALINGMETODER</h4>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-apple-pay"></i>
+                            <i class="fa-brands fa-cc-amazon-pay"></i>
+                        </div>
+                    </article>
+                    <article class="footer-section">
+                        <h4>NYHETER & TILBUD</h4>
+                        <p>Meld deg på nyhetsbrev her</p>
+                        <input type="email">
+                        <input type="submit" name="send">
+                        <p>Kjøp reisegavekort</p>
+                    </article>
+                    <article class="footer-section">
+                        <h4>KUNDESERVICE</h4>
+                        <ul>
+                            <li><a href="#">Spørsmål og svar</a></li>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Tilgjenglighetsærklering</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer-section social">
+                        <div class="account-links">
+                            <a href="#">Opprett en konto</a>
+                            <a href="#bottom"><i class="fa-regular fa-circle-user"></i> Min side</a>
+                        </div>
+                        <h4>SOSIALE MEDIER</h4>
+                        <nav class="social-icons">
+                            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://no.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </nav>
+                    </article>
+                </section>
+            </footer>
 </body>
 </html>
