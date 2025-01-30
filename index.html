@@ -1,203 +1,244 @@
 <!DOCTYPE html>
 <html lang="nb">
+
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <link href="Ikoner/css/fontawesome.css" rel="stylesheet"/>
-        <link href="Ikoner/css/brands.css" rel="stylesheet"/>
-        <link href="Ikoner/css/solid.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="css/Style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="Ikoner/css/brands.css" rel="stylesheet" />
+    <link href="Ikoner/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/Style.css">
     <title>frontside</title>
 </head>
+
 <body>
     <header class="global-header">
-        <section>
-            <nav>
-                <ul>
-                    <li><a href="#">opprett en konto</a></li>
-                    <li><a href="#">min side</a></li>
+        <nav>
+            <ul class="left">
+                <li><a href="index.html"><img src="img/fav.png" alt="logo" class="logo"></a></li>
+            </ul>
+            <ul class="right">
+                <li class="top-links">
                     <details>
                         <summary><i class="fa-solid fa-magnifying-glass"></i></summary>
-                    <li>
                         <form>
-                        <input type="search">
-                        <input type="submit" value="Søk">
+                            <input type="search">
+                            <input type="submit" value="Søk">
                         </form>
-                    </li>
                     </details>
-                </ul>
-               
-            </nav>
-            </details>
-        </section>
-
-        <section>
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="img/fav.png" alt="logo" class="logo"></a></li>
-                <li><a href="#bottom"> tips og inspirasjon</a></li>
-                <li><a href="hotell.html">Hotell</a></li>
-                <li><a href="https://www.norwegian.no" target="_blank">Fly</a></li>
-                <li><a href="#">Kontakt</a></li>
+                    <a href="order.html" class="account-link"><i class="fa-regular fa-circle-user"></i> Min side</a>
+                    <a href="#bottom" class="account-link">Opprett en konto</a>
+                </li>
+                <li class="bottom-links">
+                    <a href="#bottom">Tips og inspirasjon</a>
+                    <a href="hotell.html">Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+                    <a href="#">Kontakt</a>
+                </li>
             </ul>
         </nav>
-        </section>
     </header>
-
     <main>
         <header>
-            <img src="img/sea-4768869_1920.jpg" alt="sea" class="sea">
-            <nav>
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a></li>
-                    <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
-                    <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
-                    <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
-                    <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonering</a></li>
-                </ul>
-            </nav>
-            <form>
-                <select name="Fra" required>
-                    <option value="">oslo lufthavn</option>
-                    <option value="Torp lufthavn">Torp lufthavn</option>
-                    <option value="bergen lufthavn">Bergen lufthavn</option>
-                    <option value="alta lufthavn">alta lufthavn</option>
-                </select>
-                <select name="Til" required>
-                    <option value="">Albania</option>
-                    <option value="Danmark">Danmark</option>
-                    <option value="Finland">Finland</option>
-                    <option value="Hellas">Hellas</option>
-                </select>
-                <select name="reiselengde" required>
-                        <option value="">mindre en 1 uke</option>
-                        <option value="2-4 uker">2-4 uker</option>
-                        <option value="1 månder">1 månder</option>
-                        <option value="2-6 månder">2-6 månder</option>
-                        <option value="7-12 månder">7-12 månder</option>
-                </select>
-                <input type="date" required>
-                <input type="number" placeholder="2" required>
-                <input type="submit" name="Søk">
-            </form>
+            <div class="background-image-container">
+                <img src="img/sea-4768869_1920.jpg" alt="sea" class="background-image">
+            </div>
+            <section class="summer-tour">
+                <section class="selection-box">
+                    <nav class="selection-nav">
+                        <ul>
+                            <li><a href="#" class="selected"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a></li>
+                            <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                            <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                            <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                            <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonering</a></li>
+                        </ul>
+                    </nav>
+                    <form class="selection-form">
+                        <select name="Fra" required>
+                            <option value="">oslo lufthavn</option>
+                            <option value="Torp lufthavn">Torp lufthavn</option>
+                            <option value="bergen lufthavn">Bergen lufthavn</option>
+                            <option value="alta lufthavn">alta lufthavn</option>
+                        </select>
+                        <select name="Til" required>
+                            <option value="">Albania</option>
+                            <option value="Danmark">Danmark</option>
+                            <option value="Finland">Finland</option>
+                            <option value="Hellas">Hellas</option>
+                        </select>
+                        <select name="reiselengde" required>
+                            <option value="">mindre en 1 uke</option>
+                            <option value="2-4 uker">2-4 uker</option>
+                            <option value="1 månder">1 månder</option>
+                            <option value="2-6 månder">2-6 månder</option>
+                            <option value="7-12 månder">7-12 månder</option>
+                        </select>
+                        <input type="date" required />
+                        <input type="number" placeholder="2" required />
+                        <input type="submit" value="Søk" class="search-button" />
+                    </form>
+                </section>
+            </section>
         </header>
     </main>
+                <section class="image-container">
+                    <img src="img/holiday-2733322_1280.jpg" alt="holiday" class="centered-image">
+                    <section class="text-overlay">
+                        <h2>bestill sommer tur</h2>
+                        <p>fly + hotell</p>
+                        <p>Fra 5000kr</p>
+                    </section>
+                    <a href="#" class="book-now">bestill i dag</a>
+                </section>
+            </section>
 
-    <section>
-        <img src="img/holiday-2733322_1280.jpg" alt="holiday">
-        <h2>bestill sommer tur</h2>
-        <p>fly + hotell</p>
-        <p>Fra 5000kr</p>
-        <a href="#">bestill i dag</a>
-    </section>
+            </section>
+            <section class="offers-grid">
+                <section class="offer-box">
+                    <h4>Få ekslusive tilbud</h4>
+                    <a href="#">Logg inn/opprett konto<i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+            
+                <section class="offer-box">
+                    <h4>Billige resteplasser</h4>
+                    <a href="#">opptil 50% rabatt<i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+            
+                <section class="offer-box">
+                    <h4>Mars - spar opptil 5000,-</h4>
+                    <a href="#">sikre deg et ferie kupp<i class="fa-solid fa-arrow-right"></i></a>
+                </section>
+            </section>
+            <section>
+                <h2>Tips & insperasjon</h2>
+                <section class="grid-container">
+                    <article>
+                        <img src="img/beach-6514331_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                
+                    <article>
+                        <img src="img/beach-1836467_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                
+                    <article>
+                        <img src="img/cathedral-427997_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                
+                    <article>
+                        <img src="img/beach-666122_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 4</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                
+                    <article>
+                        <img src="img/ski-slope-3223709_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 5</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                
+                    <article>
+                        <img src="img/building-7014904_640.jpg" alt="nydelig strand">
+                        <h3>Nylig sted 6</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis
+                            rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus
+                            sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut
+                            sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae
+                            fermentum nulla</p>
+                        <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    </article>
+                </section>
+                
 
-    <section>
-        <h4>Få ekslusive tilbud</h4>
-        <a href="#">Logg inn/opprett konto<i class="fa-solid fa-arrow-right"></i></a>
-    </section>
-
-    <section>
-        <h4>Billige resteplasser</h4>
-        <a href="#">opptil 50% rabatt<i class="fa-solid fa-arrow-right"></i></a>
-    </section>
-
-    <section>
-        <h4>Mars - spar opptil 5000,-</h4>
-        <a href="#">sikre deg et ferie kupp<i class="fa-solid fa-arrow-right"></i></a>
-    </section>
-
-    <section>
-        <h2>Tips & insperasjon</h2>
-        <article>
-            <img src="img/beach-6514331_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article>
-            <img src="img/beach-1836467_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article>
-            <img src="img/cathedral-427997_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article>
-            <img src="img/beach-666122_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article>
-            <img src="img/ski-slope-3223709_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 5</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article>
-            <img src="img/building-7014904_640.jpg" alt="nydelig strand">
-            <h3>Nylig sted 6</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet tristique arcu, quis rhoncus sapien efficitur eget. Ut pretium nec diam et elementum. Sed tempor nunc a risus sagittis bibendum. Aliquam faucibus risus volutpat, viverra libero pulvinar, accumsan risus. Ut sit amet diam ex. Nunc cursus lacus non tempus euismod. Etiam non elementum ipsum, vitae fermentum nulla</p>
-            <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-    </section>
-
-
-    <footer id="bottom">
-        <section>
-            <nav class="flags">
-                <a href="#"><img src="flags/sweden.png" alt="Sverige flag">Sverige</a>
-                <a href="#"><img src="flags/denmark.png" alt="Danmark flag">Danmark</a>
-                <a href="#"><img src="flags/norway.png" alt="Norge flag">Norge</a>
-                <a href="#"><img src="flags/material.png" alt="Finland flag">Finland</a>
-                <a href="#"><img src="flags/netherlands.png" alt="Nederland flag">Nederland</a>
-            </nav>
-        </section>
-
-        <section class="pay">
-            <h4>BETALINGMETODER</h4>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-apple-pay"></i>
-            <i class="fa-brands fa-cc-amazon-pay"></i>
-        </section>
-
-        <section>
-            <h4>NYHETER & TILBUD</h4>
-            <p>Meld deg på nyhetsbrev her</p>
-            <input type="email">
-            <input type="submit" name="send">
-            <p>Kjøp reisegavekort</p>
-        </section>
-        
-        <section>
-            <h4>KUNDESERVICE</h4>
-            <ul>
-                <li><a href="#">Spørsmål og svar</a></li>
-                <li><a href="#">Chat</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Tilgjenglighetsærklering</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>SOSIALE MEDIER</h4>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://no.pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </section>
-    </footer>
+            <footer id="bottom">
+                <section class="footer-flags">
+                    <img src="flags/sweden.png" alt="Sweden">
+                    <span>Sweden</span>
+                    <img src="flags/denmark.png" alt="Denmark">
+                    <span>Denmark</span>
+                    <img src="flags/norway.png" alt="Norway">
+                    <span>Norway</span>
+                    <img src="flags/material.png" alt="Finland">
+                    <span>Finland</span>
+                    <img src="flags/netherlands.png" alt="Netherlands">
+                    <span>Netherlands</span>
+                </section>
+                <section class="footer-content">
+                    <article class="footer-section pay">
+                        <h4>BETALINGMETODER</h4>
+                        <div class="payment-icons">
+                            <i class="fa-brands fa-cc-visa"></i>
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <i class="fa-brands fa-cc-paypal"></i>
+                            <i class="fa-brands fa-apple-pay"></i>
+                            <i class="fa-brands fa-cc-amazon-pay"></i>
+                        </div>
+                    </article>
+                    <article class="footer-section">
+                        <h4>NYHETER & TILBUD</h4>
+                        <p>Meld deg på nyhetsbrev her</p>
+                        <input type="email">
+                        <input type="submit" name="send">
+                        <p>Kjøp reisegavekort</p>
+                    </article>
+                    <article class="footer-section">
+                        <h4>KUNDESERVICE</h4>
+                        <ul>
+                            <li><a href="#">Spørsmål og svar</a></li>
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Tilgjenglighetsærklering</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer-section social">
+                        <div class="account-links">
+                            <a href="#">Opprett en konto</a>
+                            <a href="#bottom"><i class="fa-regular fa-circle-user"></i> Min side</a>
+                        </div>
+                        <h4>SOSIALE MEDIER</h4>
+                        <nav class="social-icons">
+                            <a href="https://www.instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://no.pinterest.com" target="_blank"><i
+                                    class="fa-brands fa-pinterest"></i></a>
+                            <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </nav>
+                    </article>
+                </section>
+            </footer>
 </body>
+
 </html>
